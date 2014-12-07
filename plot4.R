@@ -7,7 +7,9 @@ if (!exists("pcsub")) {
     source("~/git/ExData_Plotting1/readdata.R")
 }
 
-png(filename="~/git/ExData_Plotting1/plot4.png", width=480, height = 480, units = "px")
+png(filename="~/git/ExData_Plotting1/plot4.png",
+    width=480, height = 480, units = "px",
+    bg="transparent")
 
 ## SET a 2x2 grid for the plots (creating row-wise)
 par(mfrow = c(2,2))

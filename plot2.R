@@ -7,7 +7,9 @@ if (!exists("pcsub")) {
     source("~/git/ExData_Plotting1/readdata.R")
 }
 
-png(filename="~/git/ExData_Plotting1/plot2.png", width=480, height = 480, units = "px")
+png(filename="~/git/ExData_Plotting1/plot2.png", 
+    width=480, height = 480, units = "px",
+    bg="transparent")
 
 with(pcsub, 
      plot(Datetime, Global_active_power, 

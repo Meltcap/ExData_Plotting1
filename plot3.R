@@ -8,7 +8,9 @@ if (!exists("pcsub")) {
 }
 
 ## NOTE: dev.copy resulted in legend labels being cut off. Lesson learned.
-png(filename="~/git/ExData_Plotting1/plot3.png", width=480, height = 480, units = "px")
+png(filename="~/git/ExData_Plotting1/plot3.png", 
+    width=480, height = 480, units = "px",
+    bg="transparent")
 
 with(pcsub, {
     plot(Datetime, Sub_metering_1, type="n", xlab="", ylab="Energy sub metering")
